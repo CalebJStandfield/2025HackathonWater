@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BlazorPythonModelsPresentation")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+412155b97b68c31ebdaabf22f451d838d330c4e0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d23d8fc4ef03bf5421749d6a7f52a786e3a8d4d0")]
 [assembly: System.Reflection.AssemblyProductAttribute("BlazorPythonModelsPresentation")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BlazorPythonModelsPresentation")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
