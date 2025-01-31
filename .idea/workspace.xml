@@ -13,28 +13,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="96feb1cd-57ff-42ce-a30f-79bf59b41791" name="Changes" comment="Docker">
-      <change afterPath="$PROJECT_DIR$/BlazorPythonModelsPresentation/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BlazorPythonModelsPresentation/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BlazorPythonModelsPresentation/PythonApiService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WaterModels/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WaterModels/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WaterModels/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorPythonModelsPresentation/BlazorPythonModelsPresentation.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorPythonModelsPresentation/BlazorPythonModelsPresentation.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorPythonModelsPresentation/Components/Pages/PythonModels.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorPythonModelsPresentation/Components/Pages/PythonModels.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorPythonModelsPresentation/Components/Pages/PythonModels.razor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorPythonModelsPresentation/Components/Pages/PythonModels.razor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorPythonModelsPresentation/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorPythonModelsPresentation/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlazorPythonModelsPresentation/bin/Debug/net8.0/BlazorPythonModelsPresentation.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorPythonModelsPresentation/bin/Debug/net8.0/BlazorPythonModelsPresentation.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlazorPythonModelsPresentation/bin/Debug/net8.0/BlazorPythonModelsPresentation.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorPythonModelsPresentation/bin/Debug/net8.0/BlazorPythonModelsPresentation.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlazorPythonModelsPresentation/obj/Debug/net8.0/BlazorPythonModelsPresentation.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorPythonModelsPresentation/obj/Debug/net8.0/BlazorPythonModelsPresentation.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlazorPythonModelsPresentation/obj/Debug/net8.0/BlazorPythonModelsPresentation.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorPythonModelsPresentation/obj/Debug/net8.0/BlazorPythonModelsPresentation.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorPythonModelsPresentation/obj/Debug/net8.0/BlazorPythonModelsPresentation.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorPythonModelsPresentation/obj/Debug/net8.0/BlazorPythonModelsPresentation.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlazorPythonModelsPresentation/obj/Debug/net8.0/BlazorPythonModelsPresentation.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorPythonModelsPresentation/obj/Debug/net8.0/BlazorPythonModelsPresentation.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlazorPythonModelsPresentation/obj/Debug/net8.0/BlazorPythonModelsPresentation.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorPythonModelsPresentation/obj/Debug/net8.0/BlazorPythonModelsPresentation.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlazorPythonModelsPresentation/obj/Debug/net8.0/BlazorPythonModelsPresentation.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorPythonModelsPresentation/obj/Debug/net8.0/BlazorPythonModelsPresentation.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlazorPythonModelsPresentation/obj/Debug/net8.0/ref/BlazorPythonModelsPresentation.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorPythonModelsPresentation/obj/Debug/net8.0/ref/BlazorPythonModelsPresentation.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlazorPythonModelsPresentation/obj/Debug/net8.0/refint/BlazorPythonModelsPresentation.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorPythonModelsPresentation/obj/Debug/net8.0/refint/BlazorPythonModelsPresentation.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
