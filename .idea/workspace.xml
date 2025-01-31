@@ -12,12 +12,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96feb1cd-57ff-42ce-a30f-79bf59b41791" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/indexLayout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-    </list>
+    <list default="true" id="96feb1cd-57ff-42ce-a30f-79bf59b41791" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -124,6 +119,7 @@
       <workItem from="1738354014230" duration="970000" />
       <workItem from="1738354997438" duration="214000" />
       <workItem from="1738355221949" duration="160000" />
+      <workItem from="1738355415205" duration="54000" />
     </task>
     <task id="LOCAL-00001" summary="files">
       <option name="closed" value="true" />
