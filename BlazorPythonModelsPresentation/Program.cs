@@ -1,3 +1,4 @@
+using BlazorPythonModelsPresentation;
 using BlazorPythonModelsPresentation.Components;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -5,6 +6,10 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
+
+// Python Api access
+builder.Services.AddScoped<PythonApiService>();
+builder.Services.AddScoped<HttpClient>(sp => new HttpClient { BaseAddress = new Uri("https://localhost:5001/") });
 
 var app = builder.Build();
 

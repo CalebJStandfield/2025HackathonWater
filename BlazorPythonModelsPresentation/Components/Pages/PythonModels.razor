@@ -1,7 +1,11 @@
 @page "/pythonModels"
 
+@inject PythonApiService PythonApiService
+
 <h3>PythonModels</h3>
 
-@code {
+<h3>Interact with Python Model</h3>
 
-}
+<button @onclick="GetModelResponse">Call Python Model</button>
+
+<p>@_responseMessage</p>

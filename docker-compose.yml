@@ -15,4 +15,4 @@ services:
       context: ./WaterModels
       dockerfile: Dockerfile
     ports:
-      - "5000:5000"
+      - "5001:5001"
