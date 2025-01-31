@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/calebstandfield/Documents/GitHub/2025HackathonWater/BlazorPythonModelsPresentation/obj/Debug/net8.0/scopedcss/projectbundle/BlazorPythonModelsPresentation.bundle.scp.css",
+      "PackagePath": "staticwebassets/BlazorPythonModelsPresentation.bundle.scp.css"
+    },
+    {
+      "Id": "/Users/calebstandfield/Documents/GitHub/2025HackathonWater/BlazorPythonModelsPresentation/wwwroot/app.css",
+      "PackagePath": "staticwebassets/app.css"
+    },
+    {
+      "Id": "/Users/calebstandfield/Documents/GitHub/2025HackathonWater/BlazorPythonModelsPresentation/wwwroot/bootstrap/bootstrap.min.css",
+      "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/calebstandfield/Documents/GitHub/2025HackathonWater/BlazorPythonModelsPresentation/wwwroot/bootstrap/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/Users/calebstandfield/Documents/GitHub/2025HackathonWater/BlazorPythonModelsPresentation/wwwroot/favicon.png",
+      "PackagePath": "staticwebassets/favicon.png"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.BlazorPythonModelsPresentation.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.BlazorPythonModelsPresentation.props",
+      "PackagePath": "build\\BlazorPythonModelsPresentation.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.BlazorPythonModelsPresentation.props",
+      "PackagePath": "buildMultiTargeting\\BlazorPythonModelsPresentation.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.BlazorPythonModelsPresentation.props",
+      "PackagePath": "buildTransitive\\BlazorPythonModelsPresentation.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
