@@ -1,80 +1,82 @@
 @page "/pythonModels"
 @rendermode InteractiveServer
 
-@inject IJSRuntime JsRuntime
 @inject PythonApiService PythonApiService
 
-<h3>PythonModels</h3>
+<h3>Python Water Prediction Model</h3>
 
-<h3>Interact with Python Model</h3>
-
-
-
-<div>
-    <span class="plain-line">Year, </span>
-    <span class="plain-line">Month</span>
-</div>
 <div id="ConnectionInputs">
     <div class="input-row">
+        <span class="plain-line">Year</span>
         <input type="text" @bind="year" @bind:event="oninput" placeholder=""/>
+        <span class="plain-line">Month</span>
         <input type="text" @bind="month" @bind:event="oninput" placeholder=""/>
     </div>
-</div>
-<div>
-    <span class="plain-line">Rainfall, </span>
-    <span class="plain-line">Rainfall 3 Month Average, </span>
-    <span class="plain-line">Rainfall 6 Month Average</span>
-</div>
-<div id="ConnectionInputs">
+    <br/>
     <div class="input-row">
+        <span class="plain-line">Rainfall</span>
         <input type="text" @bind="rainfall" @bind:event="oninput" placeholder=""/>
+        <span class="plain-line">Rainfall 3 Month Average</span>
         <input type="text" @bind="rainfall3MoAvg" @bind:event="oninput" placeholder=""/>
+        <span class="plain-line">Rainfall 6 Month Average</span>
         <input type="text" @bind="rainfall6MoAvg" @bind:event="oninput" placeholder=""/>
     </div>
-</div>
-<div>
-    <span class="plain-line">Temperature, </span>
-    <span class="plain-line">Temperature 3 Month Average, </span>
-    <span class="plain-line">Temperature 6 Month Average</span>
-</div>
-<div id="ConnectionInputs">
+    <br/>
+    <br/>
+    <br/>
     <div class="input-row">
+        <span class="plain-line">Temperature</span>
         <input type="text" @bind="temperature" @bind:event="oninput" placeholder=""/>
+        <span class="plain-line">Temperature 3 Month Average</span>
         <input type="text" @bind="temperature3MoAvg" @bind:event="oninput" placeholder=""/>
+        <span class="plain-line">Temperature 6 Month Average</span>
         <input type="text" @bind="temperature6MoAvg" @bind:event="oninput" placeholder=""/>
     </div>
-</div>
-<div>
-    <span class="plain-line">gslLevels (Great Salt Lake), </span>
-    <span class="plain-line">gslLevel 3 Month Average, </span>
-    <span class="plain-line">gslLevel 6 Month Average</span>
-</div>
-<div id="ConnectionInputs">
+    <br/>
+    <br/>
+    <br/>
     <div class="input-row">
+        <span class="plain-line">GSLLevels (Great Salt Lake)</span>
         <input type="text" @bind="gslLevels" @bind:event="oninput" placeholder=""/>
+        <span class="plain-line">GSLLevel 3 Month Average</span>
         <input type="text" @bind="gsl3MoAvg" @bind:event="oninput" placeholder=""/>
+        <span class="plain-line">GSLLevel 6 Month Average</span>
         <input type="text" @bind="gsl6MoAvg" @bind:event="oninput" placeholder=""/>
     </div>
-</div>
-<div>
-    <span class="plain-line">Beaver Soil, </span>
-    <span class="plain-line">Trial Soil</span>
-    <span class="plain-line">Parely Soil, </span>
-    <span class="plain-line">Hayden Soil</span>
-</div>
-<div id="ConnectionInputs">
+    <br/>
+    <br/>
+    <br/>
     <div class="input-row">
+        <span class="plain-line">Beaver Soil</span>
         <input type="text" @bind="beaverSoil" @bind:event="oninput" placeholder=""/>
+        <span class="plain-line">Trial Soil</span>
         <input type="text" @bind="trialSoil" @bind:event="oninput" placeholder=""/>
+        <span class="plain-line">Parely Soil</span>
         <input type="text" @bind="parelySoil" @bind:event="oninput" placeholder=""/>
+        <span class="plain-line">Hayden Soil</span>
         <input type="text" @bind="haydenSoil" @bind:event="oninput" placeholder=""/>
     </div>
+    <br/>
+    <br/>
+    <br/>
+    <div class="input-row">
+        <button @onclick="CalculateRiskScore">Calculate state risk</button>
+        <textarea class="@GetRiskScoreClass()" @bind="@RiskScore"></textarea>
+    </div>
 </div>
-<button @onclick="CalculateRiskScore">Calculate state risk</button>
-
-<p>@RiskScore</p>
 
 @code {
 
+    private string GetRiskScoreClass()
+    {
+        if (string.IsNullOrEmpty(RiskScore)) return "normal-textarea";
+        if (RiskScore.Contains("Little to no Risk"))
+            return "low-risk-textarea";
+        if (RiskScore.Contains("Moderate Risk"))
+            return "middle-risk-textarea";
+        return RiskScore.Contains("Severe Risk") ? "high-risk-textarea" :
+            "empty-textarea";
+
+    }
 
 }

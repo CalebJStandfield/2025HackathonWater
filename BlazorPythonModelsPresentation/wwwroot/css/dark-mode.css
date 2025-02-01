@@ -49,7 +49,7 @@ button:hover {
 }
 
 /* Inputs */
-input, textarea, select {
+input, select {
     background-color: var(--surface);
     color: var(--text);
     border: 1px solid var(--border);
@@ -57,6 +57,62 @@ input, textarea, select {
     border-radius: 4px;
     transition: border 0.3s ease;
     resize: none;
+    align-items: center;
+}
+
+textarea {
+    width: 300px;
+    height: 100px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #444;
+    background-color: #222; /* Default background */
+    color: #fff; /* Default text color */
+    resize: none;
+}
+
+.empty-textarea {
+    background-color: #333;
+    font-size: 40px;
+    color: #888; /* Gray text when empty */
+    resize: none;
+    width: 300px;
+}
+
+.high-risk-textarea {
+    background-color: #300;
+    font-size: 40px;
+    color: #ff4d4d; /* Red text for high risk */
+    border-color: #ff0000;
+    resize: none;
+    width: 300px;
+}
+
+.middle-risk-textarea {
+    background-color: #712c00;
+    font-size: 40px;
+    color: #ff752c; /* Red text for high risk */
+    border-color: #ffd016;
+    resize: none;
+    width: 300px;
+}
+
+.low-risk-textarea {
+    background-color: #003300;
+    font-size: 40px;
+    color: #4dff4d; /* Green text for low risk */
+    border-color: #00ff00;
+    resize: none;
+    width: 400px;
+}
+
+.normal-textarea {
+    background-color: #222;
+    font-size: 40px;;
+    color: #fff; /* Default */
+    resize: none;
+    width: 300px;
 }
 
 input:focus, textarea:focus, select:focus {
@@ -157,12 +213,14 @@ tr:nth-child(even) {
 
 #ConnectionInputs {
     color: #ffffff;
+    vertical-align: bottom;
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .input-row {
+    vertical-align: bottom;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -200,5 +258,58 @@ input[type="number"]:focus {
     width: 100px; /* Adjust as needed */
     background-color: #000; /* Black line color */
     margin-right: 10px;
-    vertical-align: middle;
+    max-width: 200px;
+}
+
+#ConnectionInputs {
+    color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+}
+
+.input-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+    align-items: center;
+}
+
+input[type="text"] {
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #444444;
+    background-color: #333333;
+    color: #ffffff;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    width: 200px; /* Control width */
+}
+
+input[type="text"]:focus {
+    border-color: #6a5acd;  /* Purple border on focus */
+}
+
+.plain-line {
+    display: inline-block;
+    font-size: 16px;
+    color: #aaaaaa;  /* Grey text for labels */
+    vertical-align: top;
+    align-items: center;
+}
+
+.plain-line:last-child {
+    margin-right: 0;  /* Remove margin from the last label */
+}
+
+.plain-line + .plain-line {
+    margin-left: 10px;  /* Space between labels */
+}
+
+span {
+    vertical-align: bottom;
+    align-items: center;
+    font-weight: 600;  /* Bold text for labels */
 }

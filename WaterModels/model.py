@@ -47,5 +47,5 @@ def get_risk(x: pd.DataFrame):
     elif is_cat_3(x):
         return "Severe Risk"
     else:
-        return "No Risk"
+        return "Unpredictable"
 
