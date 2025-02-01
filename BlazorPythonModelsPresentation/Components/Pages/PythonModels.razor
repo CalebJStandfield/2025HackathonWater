@@ -1,11 +1,31 @@
 @page "/pythonModels"
-
+@rendermode InteractiveServer
 @inject PythonApiService PythonApiService
 
 <h3>PythonModels</h3>
 
 <h3>Interact with Python Model</h3>
 
-<button @onclick="GetModelResponse">Call Python Model</button>
+<button @onclick="GetModelResponse">Get Response from Python</button>
+
+<button @onclick="UpdateResponse">Update response</button>
 
 <p>@_responseMessage</p>
+
+@code
+{
+
+    private string _responseMessage = "Default";
+
+    private void UpdateResponse()
+    {
+        Console.WriteLine("Button clicked!");  // Log to console to check if it gets called
+        _responseMessage = "Updated";
+        StateHasChanged();
+    }
+
+    private async Task GetModelResponse()
+    {
+        _responseMessage = await PythonApiService.CallPythonModel("Test Data");
+    }
+}

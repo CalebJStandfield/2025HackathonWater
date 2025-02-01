@@ -13,6 +13,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="96feb1cd-57ff-42ce-a30f-79bf59b41791" name="Changes" comment="Docker">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorPythonModelsPresentation/Components/Pages/PythonModels.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorPythonModelsPresentation/Components/Pages/PythonModels.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorPythonModelsPresentation/Components/Pages/PythonModels.razor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorPythonModelsPresentation/Components/Pages/PythonModels.razor.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlazorPythonModelsPresentation/bin/Debug/net8.0/BlazorPythonModelsPresentation.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorPythonModelsPresentation/bin/Debug/net8.0/BlazorPythonModelsPresentation.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlazorPythonModelsPresentation/bin/Debug/net8.0/BlazorPythonModelsPresentation.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorPythonModelsPresentation/bin/Debug/net8.0/BlazorPythonModelsPresentation.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlazorPythonModelsPresentation/obj/Debug/net8.0/BlazorPythonModelsPresentation.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorPythonModelsPresentation/obj/Debug/net8.0/BlazorPythonModelsPresentation.AssemblyInfo.cs" afterDir="false" />
@@ -132,7 +135,7 @@
       <workItem from="1738354997438" duration="214000" />
       <workItem from="1738355221949" duration="160000" />
       <workItem from="1738355415205" duration="54000" />
-      <workItem from="1738363163179" duration="1571000" />
+      <workItem from="1738363163179" duration="2004000" />
     </task>
     <task id="LOCAL-00001" summary="files">
       <option name="closed" value="true" />

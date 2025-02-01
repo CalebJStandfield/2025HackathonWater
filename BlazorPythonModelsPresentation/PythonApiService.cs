@@ -5,25 +5,34 @@ using System.Threading.Tasks;
 
 namespace BlazorPythonModelsPresentation;
 
-public class PythonApiService
+public class PythonApiService(HttpClient httpClient)
 {
-    private readonly HttpClient _httpClient;
-
-    public PythonApiService(HttpClient httpClient)
-    {
-        _httpClient = httpClient;
-    }
-
     public async Task<string> CallPythonModel(string inputData)
     {
         var requestData = new { input = inputData };
         var json = JsonSerializer.Serialize(requestData);
         var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-        var response = await _httpClient.PostAsync("http://127.0.0.1:5001/process", content);
+        var response = await httpClient.PostAsync("http://127.0.0.1:5001/process", content);
         response.EnsureSuccessStatusCode();
 
         var responseString = await response.Content.ReadAsStringAsync();
         return responseString;
+    }
+
+    // (String state, Double rainfall, Double Temp) return double risk 0 - 500 DSCI
+
+    public async Task<double> DsciStateRisk(double rainfall, double temp, string state = "utah")
+    {
+        var requestData = new { input = rainfall, temp = temp, state = state };
+        var json = JsonSerializer.Serialize(requestData);
+        var content = new StringContent(json, Encoding.UTF8, "application/json");
+
+        var response = await httpClient.PostAsync("http://127.0.0.1:5001/process", content);
+        response.EnsureSuccessStatusCode();
+
+        var responseString = await response.Content.ReadAsStringAsync();
+        var pyResponseDouble = double.Parse(responseString);
+        return pyResponseDouble;
     }
 }
