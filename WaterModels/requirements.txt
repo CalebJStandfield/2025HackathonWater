@@ -1,5 +1,5 @@
 flask
 requests
-numpy
+numpy==1.21.5
 pandas
 scikit-learn==1.0.2

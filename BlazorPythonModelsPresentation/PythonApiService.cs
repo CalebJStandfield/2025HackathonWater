@@ -14,9 +14,9 @@ public class PythonApiService(HttpClient httpClient)
         // Look at how the DataFrame handles inputs
 
         // x_input = pd.DataFrame({
-        //     "Year": [2000],
+        //     "Year": [2025],
         //     "Month": [1],
-        //     "Rainfall": [2.17],
+        //     "Rainfall": [1.043333],
         //     "Rainfall_3mo_avg": [2.17],
         //     "Rainfall_6mo_avg": [2.17],
         //     "Temperature": [35.1],
@@ -32,7 +32,7 @@ public class PythonApiService(HttpClient httpClient)
         // })
         var requestData = new
         {
-            input = year, month, rainfall, temperature, gslLevels,
+            year, month, rainfall, temperature, gslLevels,
             rainfall3MoAvg, rainfall6MoAvg, temperature3MoAvg, temperature6MoAvg, gsl3MoAvg, gsl6MoAvg, beaverSoil,
             trialSoil, parelySoil, haydenSoil
         };
@@ -43,6 +43,7 @@ public class PythonApiService(HttpClient httpClient)
         response.EnsureSuccessStatusCode();
 
         var responseString = await response.Content.ReadAsStringAsync();
+        Console.WriteLine("New response!");
         return responseString;
     }
 }

@@ -13,6 +13,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="96feb1cd-57ff-42ce-a30f-79bf59b41791" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorPythonModelsPresentation/Components/Pages/PythonModels.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorPythonModelsPresentation/Components/Pages/PythonModels.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorPythonModelsPresentation/Components/Pages/PythonModels.razor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorPythonModelsPresentation/Components/Pages/PythonModels.razor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorPythonModelsPresentation/PythonApiService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorPythonModelsPresentation/PythonApiService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlazorPythonModelsPresentation/bin/Debug/net8.0/BlazorPythonModelsPresentation.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorPythonModelsPresentation/bin/Debug/net8.0/BlazorPythonModelsPresentation.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlazorPythonModelsPresentation/bin/Debug/net8.0/BlazorPythonModelsPresentation.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorPythonModelsPresentation/bin/Debug/net8.0/BlazorPythonModelsPresentation.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlazorPythonModelsPresentation/obj/Debug/net8.0/BlazorPythonModelsPresentation.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorPythonModelsPresentation/obj/Debug/net8.0/BlazorPythonModelsPresentation.AssemblyInfo.cs" afterDir="false" />
@@ -22,7 +26,10 @@
       <change beforePath="$PROJECT_DIR$/BlazorPythonModelsPresentation/obj/Debug/net8.0/BlazorPythonModelsPresentation.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorPythonModelsPresentation/obj/Debug/net8.0/BlazorPythonModelsPresentation.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlazorPythonModelsPresentation/obj/Debug/net8.0/ref/BlazorPythonModelsPresentation.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorPythonModelsPresentation/obj/Debug/net8.0/ref/BlazorPythonModelsPresentation.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlazorPythonModelsPresentation/obj/Debug/net8.0/refint/BlazorPythonModelsPresentation.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorPythonModelsPresentation/obj/Debug/net8.0/refint/BlazorPythonModelsPresentation.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WaterModels/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/WaterModels/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorPythonModelsPresentation/wwwroot/css/dark-mode.css" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorPythonModelsPresentation/wwwroot/css/dark-mode.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WaterModels/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/WaterModels/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WaterModels/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/WaterModels/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WaterModels/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/WaterModels/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +145,7 @@
       <workItem from="1738355221949" duration="160000" />
       <workItem from="1738355415205" duration="54000" />
       <workItem from="1738363163179" duration="5692000" />
-      <workItem from="1738400240365" duration="2017000" />
+      <workItem from="1738400240365" duration="2649000" />
     </task>
     <task id="LOCAL-00001" summary="files">
       <option name="closed" value="true" />
