@@ -2,6 +2,8 @@ from flask import Flask, jsonify, request
 
 app = Flask(__name__)
 
+IMAGE_FOLDER = "../BlazorProject/wwwroot/images/"
+
 # Example Python function (replace with your actual model code)
 def process_data(input_data):
     # Your Python logic here (e.g., water model predictions)

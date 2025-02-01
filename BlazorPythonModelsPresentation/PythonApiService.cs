@@ -20,9 +20,11 @@ public class PythonApiService(HttpClient httpClient)
         return responseString;
     }
 
-    // (String state, Double rainfall, Double Temp) return double risk 0 - 500 DSCI
+    private double _riskScore;
 
-    public async Task<double> DsciStateRisk(double rainfall, double temp, double groundWater, string state = "utah")
+    private List<string>? _riskScoreImage;
+
+    public async Task DsciStateRisk(double rainfall, double temp, double groundWater, string state = "utah")
     {
         var requestData = new { input = rainfall, temp, groundWater, state };
         var json = JsonSerializer.Serialize(requestData);
@@ -33,6 +35,17 @@ public class PythonApiService(HttpClient httpClient)
 
         var responseString = await response.Content.ReadAsStringAsync();
         var pyResponseDouble = double.Parse(responseString);
-        return pyResponseDouble;
+
+        double riskScore;
+        List<string> images;
+
+        response = await httpClient.PostAsJsonAsync("https://your-api-url.com/dsci_state_risk", requestData);
+
+        if (response.IsSuccessStatusCode)
+        {
+            var result = await response.Content.ReadFromJsonAsync<Dictionary<string, object>>();
+            _riskScore = Convert.ToDouble(result!["risk_score"]);
+            _riskScoreImage = ((JsonElement)result["images"]).Deserialize<List<string>>()!;
+        }
     }
 }

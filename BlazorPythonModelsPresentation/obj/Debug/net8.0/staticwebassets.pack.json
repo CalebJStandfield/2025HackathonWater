@@ -5,6 +5,14 @@
       "PackagePath": "staticwebassets/BlazorPythonModelsPresentation.bundle.scp.css"
     },
     {
+      "Id": "/Users/calebstandfield/Documents/GitHub/2025HackathonWater/BlazorPythonModelsPresentation/wwwroot/AquaAwareLogo.png",
+      "PackagePath": "staticwebassets/AquaAwareLogo.png"
+    },
+    {
+      "Id": "/Users/calebstandfield/Documents/GitHub/2025HackathonWater/BlazorPythonModelsPresentation/wwwroot/AwqaAware.png",
+      "PackagePath": "staticwebassets/AwqaAware.png"
+    },
+    {
       "Id": "/Users/calebstandfield/Documents/GitHub/2025HackathonWater/BlazorPythonModelsPresentation/wwwroot/app.css",
       "PackagePath": "staticwebassets/app.css"
     },

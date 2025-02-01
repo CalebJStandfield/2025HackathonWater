@@ -28,4 +28,3 @@
 /Users/calebstandfield/Documents/GitHub/2025HackathonWater/BlazorPythonModelsPresentation/obj/Debug/net8.0/BlazorPythonModelsPresentation.pdb
 /Users/calebstandfield/Documents/GitHub/2025HackathonWater/BlazorPythonModelsPresentation/obj/Debug/net8.0/BlazorPythonModelsPresentation.genruntimeconfig.cache
 /Users/calebstandfield/Documents/GitHub/2025HackathonWater/BlazorPythonModelsPresentation/obj/Debug/net8.0/ref/BlazorPythonModelsPresentation.dll
-/Users/calebstandfield/Documents/GitHub/2025HackathonWater/BlazorPythonModelsPresentation/obj/Debug/net8.0/scopedcss/Components/Pages/Dashboard.razor.rz.scp.css
