@@ -1,0 +1,35 @@
+<!-- dashboard.razor -->
+@page "/dashboard"
+
+<div class="header">
+    <img src="logo.png" alt="Logo" class="logo" />
+</div>
+
+<div class="sidebar">
+    <a class="active" href="Home">Home</a>
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+</div>
+
+<div class="main-content">
+    <div>@_currentContent</div>
+</div>
+
+@code {
+    private string _currentContent = "Select a button to display content";
+
+
+
+    private void ShowContent(string content)
+    {
+        _currentContent = content switch
+        {
+            "content1" => "Content for Button 1",
+            "content2" => "Content for Button 2",
+            "content3" => "Content for Button 3",
+            "content4" => "Content for Button 4",
+            _ => "Select a button to display content"
+        };
+    }
+}

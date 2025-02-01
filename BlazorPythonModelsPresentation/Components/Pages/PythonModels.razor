@@ -1,5 +1,7 @@
 @page "/pythonModels"
 @rendermode InteractiveServer
+
+@inject IJSRuntime JsRuntime
 @inject PythonApiService PythonApiService
 
 <h3>PythonModels</h3>
@@ -12,20 +14,7 @@
 
 <p>@_responseMessage</p>
 
-@code
-{
+@code {
 
-    private string _responseMessage = "Default";
 
-    private void UpdateResponse()
-    {
-        Console.WriteLine("Button clicked!");  // Log to console to check if it gets called
-        _responseMessage = "Updated";
-        StateHasChanged();
-    }
-
-    private async Task GetModelResponse()
-    {
-        _responseMessage = await PythonApiService.CallPythonModel("Test Data");
-    }
 }

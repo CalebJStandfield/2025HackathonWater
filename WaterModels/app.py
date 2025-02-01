@@ -14,7 +14,6 @@ def process():
     result = process_data(input_data)
     return jsonify(result)
 
-
 @app.route('/dsci_state_risk', methods=['POST'])
 def dsci_state_risk():
     # Get the JSON data from the request

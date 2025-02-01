@@ -1,5 +1,6 @@
 using BlazorPythonModelsPresentation;
 using BlazorPythonModelsPresentation.Components;
+using BlazorPythonModelsPresentation.Components.Pages;
 
 var builder = WebApplication.CreateBuilder(args);
 
