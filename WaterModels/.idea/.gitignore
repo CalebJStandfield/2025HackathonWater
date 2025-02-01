@@ -6,3 +6,28 @@
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
+
+# Ignore DLL, PDB, and JSON files in all folders
+*.dll
+*.pdb
+*.json
+
+# Ignore runtime build artifacts
+bin/
+obj/
+*.log
+*.cache
+
+# Ignore Blazor and .NET build output
+wwwroot/_framework/
+wwwroot/css/
+wwwroot/js/
+
+# Rider / VS Code / Visual Studio / PyCharm
+.idea/
+.vscode/
+*.suo
+*.user
+*.csproj.user
+
+*.AssemblyInfo.cs
