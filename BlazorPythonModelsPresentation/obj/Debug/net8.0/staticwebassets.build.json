@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "KMftZWBPOzzGClCmLo3t1Dd1m1XcW157OQOKyxUEtKs=",
+  "Hash": "BO+gL47B+L4vLZpsk25i31SOVg7BwgmS6+MMKHnDcDI=",
   "Source": "BlazorPythonModelsPresentation",
   "BasePath": "_content/BlazorPythonModelsPresentation",
   "Mode": "Default",
@@ -150,6 +150,25 @@
       "OriginalItemSpec": "wwwroot/favicon.png"
     },
     {
+      "Identity": "/Users/calebstandfield/Documents/GitHub/2025HackathonWater/BlazorPythonModelsPresentation/wwwroot/Images/AquaAware.png",
+      "SourceId": "BlazorPythonModelsPresentation",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/calebstandfield/Documents/GitHub/2025HackathonWater/BlazorPythonModelsPresentation/wwwroot/",
+      "BasePath": "_content/BlazorPythonModelsPresentation",
+      "RelativePath": "Images/AquaAware.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Images/AquaAware.png"
+    },
+    {
       "Identity": "/Users/calebstandfield/Documents/GitHub/2025HackathonWater/BlazorPythonModelsPresentation/wwwroot/Images/AquaAwareLogo.png",
       "SourceId": "BlazorPythonModelsPresentation",
       "SourceType": "Discovered",
@@ -169,12 +188,12 @@
       "OriginalItemSpec": "wwwroot/Images/AquaAwareLogo.png"
     },
     {
-      "Identity": "/Users/calebstandfield/Documents/GitHub/2025HackathonWater/BlazorPythonModelsPresentation/wwwroot/Images/AwqaAware.png",
+      "Identity": "/Users/calebstandfield/Documents/GitHub/2025HackathonWater/BlazorPythonModelsPresentation/wwwroot/Images/AquaAwareLogoBlack.png",
       "SourceId": "BlazorPythonModelsPresentation",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/calebstandfield/Documents/GitHub/2025HackathonWater/BlazorPythonModelsPresentation/wwwroot/",
       "BasePath": "_content/BlazorPythonModelsPresentation",
-      "RelativePath": "Images/AwqaAware.png",
+      "RelativePath": "Images/AquaAwareLogoBlack.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -185,7 +204,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Images/AwqaAware.png"
+      "OriginalItemSpec": "wwwroot/Images/AquaAwareLogoBlack.png"
     }
   ]
 }

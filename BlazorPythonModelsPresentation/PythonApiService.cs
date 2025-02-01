@@ -7,7 +7,7 @@ namespace BlazorPythonModelsPresentation;
 
 public class PythonApiService(HttpClient httpClient)
 {
-    public async Task<double> DsciStateRisk(int year, int month, double rainfall, double temperature, double gslLevels,
+    public async Task<string> DsciStateRisk(int year, int month, double rainfall, double temperature, double gslLevels,
         double rainfall3MoAvg, double rainfall6MoAvg, double temperature3MoAvg, double temperature6MoAvg,
         double gsl3MoAvg, double gsl6MoAvg, double beaverSoil, double trialSoil, double parelySoil, double haydenSoil)
     {
@@ -43,7 +43,6 @@ public class PythonApiService(HttpClient httpClient)
         response.EnsureSuccessStatusCode();
 
         var responseString = await response.Content.ReadAsStringAsync();
-        var pyRiskScore = double.Parse(responseString);
-        return pyRiskScore;
+        return responseString;
     }
 }

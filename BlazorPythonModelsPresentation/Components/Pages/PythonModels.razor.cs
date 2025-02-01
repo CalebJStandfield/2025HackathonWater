@@ -8,7 +8,7 @@ public partial class PythonModels : ComponentBase
     /// <summary>
     ///   RiskScore of utah based off python model and input params.
     /// </summary>
-    private double RiskScore;
+    private string RiskScore;
 
     // Params for DSCI, All will have default params
     private int year = 2000;

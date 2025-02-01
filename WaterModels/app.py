@@ -1,5 +1,7 @@
 from flask import Flask, jsonify, request
 
+from WaterModels.model import get_risk
+
 app = Flask(__name__)
 
 IMAGE_FOLDER = "../BlazorProject/wwwroot/images/"
@@ -13,8 +15,8 @@ def dsci_state_risk():
     year = data['year']
     month = data['month']
     rainfall = data['rainfall']
-    temperature = data['']
-    gsl_levels = data['temperature']
+    temperature = data['temperature']
+    gsl_levels = data['gslLevels']
     rainfall_3mo_avg = data['rainfall3MoAvg']
     rainfall_6mo_avg = data['rainfall6MoAvg']
     temperature_3mo_avg = data['temperature3MoAvg']
@@ -26,8 +28,26 @@ def dsci_state_risk():
     parely_soil = data['parelySoil']
     hayden_soil = data['haydenSoil']
 
+    pd.DataFrame({
+        "Year" : year,
+        "Month" : month,
+        "Rainfall" : rainfall,
+        "Rainfall_3mo_avg" : rainfall_3mo_avg,
+        "Rainfall_6mo_avg" : rainfall_6mo_avg,
+        "Temperature" : temperature,
+        "Temperature_3mo_avg" : temperature_3mo_avg,
+        "Temperature_6mo_avg" : temperature_6mo_avg,
+        "GSL Levels" : gsl_levels,
+        "GSL_3mo_avg" : gsl_3mo_avg,
+        "GSL_6mo_avg" : gsl_6mo_avg,
+        "beaver_soil" : beaver_soil,
+        "trial_soil" : trial_soil,
+        "parely_soil" : parely_soil,
+        "hayden_soil" : hayden_soil
+    })
+
     # Process the data (for example, you could calculate a risk score)
-    risk_score = (rainfall + temp) / 2  # Simple example calculation
+    risk_score =  get_risk(x: pd.DataFrame)
 
     # Return the result as a string
     return str(risk_score)
