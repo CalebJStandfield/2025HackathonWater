@@ -24,9 +24,28 @@ public class PythonApiService(HttpClient httpClient)
 
     private List<string>? _riskScoreImage;
 
-    public async Task DsciStateRisk(double rainfall, double temp, double groundWater, string state = "utah")
+    public async Task DsciStateRisk(int year, int month, double rainfall, double temperature, double gslLevels,
+        double rainfall3MoAvg, double rainfall6MoAvg, double temperature3MoAvg, double temperature6MoAvg, double gsl3MoAvg, double gsl6MoAvg, double beaverSoil, double trialSoil, double parelySoil, double haydenSoil)
     {
-        var requestData = new { input = rainfall, temp, groundWater, state };
+
+        // x_input = pd.DataFrame({
+        //     "Year": [2000],
+        //     "Month": [1],
+        //     "Rainfall": [2.17],
+        //     "Rainfall_3mo_avg": [2.17],
+        //     "Rainfall_6mo_avg": [2.17],
+        //     "Temperature": [35.1],
+        //     "Temperature_3mo_avg": [35.1],
+        //     "Temperature_6mo_avg": [35.1],
+        //     "GSL Levels": [4202.58],
+        //     "GSL_3mo_avg": [4202.58],
+        //     "GSL_6mo_avg": [4202.58],
+        //     "beaver_soil": [53.26],
+        //     "trial_soil": [75.72],
+        //     "parely_soil": [77.28],
+        //     "hayden_soil": [79.97]
+        // })
+        var requestData = new { input = year, month, rainfall, rainfall3MoAvg, rainfall6MoAvg, temperature, temperature3MoAvg, temperature6MoAvg, gslLevels, gsl3MoAvg, gsl6MoAvg, beaverSoil, trialSoil, parelySoil, haydenSoil};
         var json = JsonSerializer.Serialize(requestData);
         var content = new StringContent(json, Encoding.UTF8, "application/json");
 

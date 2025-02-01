@@ -4,27 +4,27 @@ app = Flask(__name__)
 
 IMAGE_FOLDER = "../BlazorProject/wwwroot/images/"
 
-# Example Python function (replace with your actual model code)
-def process_data(input_data):
-    # Your Python logic here (e.g., water model predictions)
-    return {"result": f"Processed: {input_data}"}
-
-@app.route('/process', methods=['POST'])
-def process():
-    data = request.get_json()  # Get JSON from POST request
-    input_data = data.get('input')
-    result = process_data(input_data)
-    return jsonify(result)
-
 @app.route('/dsci_state_risk', methods=['POST'])
 def dsci_state_risk():
     # Get the JSON data from the request
     data = request.get_json()
 
     # Extract the input values from the request
-    rainfall = data['input']
-    temp = data['temp']
-    state = data['state']
+    year = data['year']
+    month = data['month']
+    rainfall = data['rainfall']
+    temperature = data['']
+    gsl_levels = data['temperature']
+    rainfall_3mo_avg = data['rainfall3MoAvg']
+    rainfall_6mo_avg = data['rainfall6MoAvg']
+    temperature_3mo_avg = data['temperature3MoAvg']
+    temperature_6mo_avg = data['temperature6MoAvg']
+    gsl_3mo_avg = data['gsl3MoAvg']
+    gsl_6mo_avg = data['gsl6MoAvg']
+    beaver_soil = data['beaverSoil']
+    trial_soil = data['trialSoil']
+    parely_soil = data['parelySoil']
+    hayden_soil = data['haydenSoil']
 
     # Process the data (for example, you could calculate a risk score)
     risk_score = (rainfall + temp) / 2  # Simple example calculation
