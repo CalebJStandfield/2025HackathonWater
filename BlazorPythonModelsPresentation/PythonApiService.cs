@@ -7,26 +7,11 @@ namespace BlazorPythonModelsPresentation;
 
 public class PythonApiService(HttpClient httpClient)
 {
-    public async Task<string> CallPythonModel(string inputData)
+    public async Task<double> DsciStateRisk(int year, int month, double rainfall, double temperature, double gslLevels,
+        double rainfall3MoAvg, double rainfall6MoAvg, double temperature3MoAvg, double temperature6MoAvg,
+        double gsl3MoAvg, double gsl6MoAvg, double beaverSoil, double trialSoil, double parelySoil, double haydenSoil)
     {
-        var requestData = new { input = inputData };
-        var json = JsonSerializer.Serialize(requestData);
-        var content = new StringContent(json, Encoding.UTF8, "application/json");
-
-        var response = await httpClient.PostAsync("http://127.0.0.1:5001/process", content);
-        response.EnsureSuccessStatusCode();
-
-        var responseString = await response.Content.ReadAsStringAsync();
-        return responseString;
-    }
-
-    private double _riskScore;
-
-    private List<string>? _riskScoreImage;
-
-    public async Task DsciStateRisk(int year, int month, double rainfall, double temperature, double gslLevels,
-        double rainfall3MoAvg, double rainfall6MoAvg, double temperature3MoAvg, double temperature6MoAvg, double gsl3MoAvg, double gsl6MoAvg, double beaverSoil, double trialSoil, double parelySoil, double haydenSoil)
-    {
+        // Look at how the DataFrame handles inputs
 
         // x_input = pd.DataFrame({
         //     "Year": [2000],
@@ -45,7 +30,12 @@ public class PythonApiService(HttpClient httpClient)
         //     "parely_soil": [77.28],
         //     "hayden_soil": [79.97]
         // })
-        var requestData = new { input = year, month, rainfall, rainfall3MoAvg, rainfall6MoAvg, temperature, temperature3MoAvg, temperature6MoAvg, gslLevels, gsl3MoAvg, gsl6MoAvg, beaverSoil, trialSoil, parelySoil, haydenSoil};
+        var requestData = new
+        {
+            input = year, month, rainfall, temperature, gslLevels,
+            rainfall3MoAvg, rainfall6MoAvg, temperature3MoAvg, temperature6MoAvg, gsl3MoAvg, gsl6MoAvg, beaverSoil,
+            trialSoil, parelySoil, haydenSoil
+        };
         var json = JsonSerializer.Serialize(requestData);
         var content = new StringContent(json, Encoding.UTF8, "application/json");
 
@@ -53,18 +43,7 @@ public class PythonApiService(HttpClient httpClient)
         response.EnsureSuccessStatusCode();
 
         var responseString = await response.Content.ReadAsStringAsync();
-        var pyResponseDouble = double.Parse(responseString);
-
-        double riskScore;
-        List<string> images;
-
-        response = await httpClient.PostAsJsonAsync("https://your-api-url.com/dsci_state_risk", requestData);
-
-        if (response.IsSuccessStatusCode)
-        {
-            var result = await response.Content.ReadFromJsonAsync<Dictionary<string, object>>();
-            _riskScore = Convert.ToDouble(result!["risk_score"]);
-            _riskScoreImage = ((JsonElement)result["images"]).Deserialize<List<string>>()!;
-        }
+        var pyRiskScore = double.Parse(responseString);
+        return pyRiskScore;
     }
 }
