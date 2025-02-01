@@ -34,3 +34,5 @@ wwwroot/js/
 *.suo
 *.user
 *.csproj.user
+
+*.AssemblyInfo.cs
