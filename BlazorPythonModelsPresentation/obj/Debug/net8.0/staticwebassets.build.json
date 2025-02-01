@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "iBCl2zwgKl2ZJnDeS8U4HtMf0Szdau5wTVx74XLPdLI=",
+  "Hash": "KMftZWBPOzzGClCmLo3t1Dd1m1XcW157OQOKyxUEtKs=",
   "Source": "BlazorPythonModelsPresentation",
   "BasePath": "_content/BlazorPythonModelsPresentation",
   "Mode": "Default",
@@ -110,6 +110,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/bootstrap/bootstrap.min.css.map"
+    },
+    {
+      "Identity": "/Users/calebstandfield/Documents/GitHub/2025HackathonWater/BlazorPythonModelsPresentation/wwwroot/css/dark-mode.css",
+      "SourceId": "BlazorPythonModelsPresentation",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/calebstandfield/Documents/GitHub/2025HackathonWater/BlazorPythonModelsPresentation/wwwroot/",
+      "BasePath": "_content/BlazorPythonModelsPresentation",
+      "RelativePath": "css/dark-mode.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/dark-mode.css"
     },
     {
       "Identity": "/Users/calebstandfield/Documents/GitHub/2025HackathonWater/BlazorPythonModelsPresentation/wwwroot/favicon.png",

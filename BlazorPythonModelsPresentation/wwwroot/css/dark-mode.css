@@ -1,0 +1,155 @@
+/* === Soothing Dark Mode for Blazor === */
+
+/* Global styles */
+:root {
+    --background: #121212;
+    --surface: #1E1E1E;
+    --text: #E0E0E0;
+    --text-muted: #B0B0B0;
+    --accent: #4A90E2;
+    --border: #333;
+    --hover: rgba(255, 255, 255, 0.1);
+}
+
+/* Apply dark mode styles */
+body {
+    background-color: var(--background);
+    color: var(--text);
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Links */
+a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #7AB6F6;
+}
+
+/* Buttons */
+button {
+    background-color: var(--surface);
+    color: var(--text);
+    border: 1px solid var(--border);
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.1s ease-in-out;
+}
+
+button:hover {
+    background-color: var(--hover);
+    transform: scale(1.05);
+}
+
+/* Inputs */
+input, textarea, select {
+    background-color: var(--surface);
+    color: var(--text);
+    border: 1px solid var(--border);
+    padding: 8px;
+    border-radius: 4px;
+    transition: border 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: var(--accent);
+    outline: none;
+}
+
+/* Cards */
+.card {
+    background-color: var(--surface);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid var(--border);
+}
+
+th {
+    background-color: var(--surface);
+    color: var(--text);
+}
+
+tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Utility Classes */
+.text-muted {
+    color: var(--text-muted);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Custom Navbar */
+.custom-navbar {
+    background-color: #121212; /* Dark background */
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo Styling */
+.navbar-logo {
+    height: 40px; /* Adjust size as needed */
+    margin-right: 15px;
+}
+
+/* Banner or Extra Image */
+.navbar-banner {
+    height: 40px; /* Adjust size as needed */
+    margin-right: auto; /* Pushes 'About' link to the right */
+}
+
+/* Navbar Links */
+.nav-link {
+    color: #121212;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #4A90E2; /* Highlight color */
+}
+
+.text-container {
+    max-width: 600px; /* Adjust width */
+    line-height: 1.6;
+}
+
+.float-image {
+    float: left; /* Change to 'right' if you want the image on the other side */
+    margin: 0 15px 10px 0; /* Adds spacing around the image */
+    width: 150px; /* Adjust image size */
+    border-radius: 8px; /* Optional: Adds rounded corners */
+}

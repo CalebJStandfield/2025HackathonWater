@@ -38,10 +38,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9QeXRob25Nb2RlbHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/calebstandfield/Documents/GitHub/2025HackathonWater/BlazorPythonModelsPresentation/Components/Pages/Weather.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9XZWF0aGVyLnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
 [/Users/calebstandfield/Documents/GitHub/2025HackathonWater/BlazorPythonModelsPresentation/Components/Routes.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Sb3V0ZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 

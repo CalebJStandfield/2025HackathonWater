@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css.map"
     },
     {
+      "Id": "/Users/calebstandfield/Documents/GitHub/2025HackathonWater/BlazorPythonModelsPresentation/wwwroot/css/dark-mode.css",
+      "PackagePath": "staticwebassets/css/dark-mode.css"
+    },
+    {
       "Id": "/Users/calebstandfield/Documents/GitHub/2025HackathonWater/BlazorPythonModelsPresentation/wwwroot/favicon.png",
       "PackagePath": "staticwebassets/favicon.png"
     },
