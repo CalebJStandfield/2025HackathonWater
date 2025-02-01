@@ -7,7 +7,25 @@
 <h3>PythonModels</h3>
 
 <h3>Interact with Python Model</h3>
-
+<div id="ConnectionInputs">
+    <div class="input-row">
+        <input type="text" @bind="year" @bind:event="oninput" placeholder=""/>
+        <input type="text" @bind="month" @bind:event="oninput" placeholder=""/>
+        <input type="text" @bind="rainfall" @bind:event="oninput" placeholder=""/>
+        <input type="text" @bind="temperature" @bind:event="oninput" placeholder=""/>
+        <input type="text" @bind="gslLevels" @bind:event="oninput" placeholder=""/>
+        <input type="text" @bind="rainfall3MoAvg" @bind:event="oninput" placeholder=""/>
+        <input type="text" @bind="rainfall6MoAvg" @bind:event="oninput" placeholder=""/>
+        <input type="text" @bind="temperature3MoAvg" @bind:event="oninput" placeholder=""/>
+        <input type="text" @bind="temperature6MoAvg" @bind:event="oninput" placeholder=""/>
+        <input type="text" @bind="gsl3MoAvg" @bind:event="oninput" placeholder=""/>
+        <input type="text" @bind="gsl6MoAvg" @bind:event="oninput" placeholder=""/>
+        <input type="text" @bind="beaverSoil" @bind:event="oninput" placeholder=""/>
+        <input type="text" @bind="trialSoil" @bind:event="oninput" placeholder=""/>
+        <input type="text" @bind="parelySoil" @bind:event="oninput" placeholder=""/>
+        <input type="text" @bind="haydenSoil" @bind:event="oninput" placeholder=""/>
+    </div>
+</div>
 <button @onclick="CalculateRiskScore">Calculate state risk</button>
 
 
