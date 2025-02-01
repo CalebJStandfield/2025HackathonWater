@@ -12,16 +12,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96feb1cd-57ff-42ce-a30f-79bf59b41791" name="Changes" comment="assembaly">
-      <change afterPath="$PROJECT_DIR$/BlazorPythonModelsPresentation/wwwroot/css/dark-mode.css" afterDir="false" />
+    <list default="true" id="96feb1cd-57ff-42ce-a30f-79bf59b41791" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorPythonModelsPresentation/Components/App.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorPythonModelsPresentation/Components/App.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorPythonModelsPresentation/Components/Layout/MainLayout.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorPythonModelsPresentation/Components/Layout/MainLayout.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorPythonModelsPresentation/Components/Layout/NavMenu.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorPythonModelsPresentation/Components/Layout/NavMenu.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorPythonModelsPresentation/Components/Pages/Weather.razor" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/BlazorPythonModelsPresentation/bin/Debug/net8.0/BlazorPythonModelsPresentation.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorPythonModelsPresentation/bin/Debug/net8.0/BlazorPythonModelsPresentation.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlazorPythonModelsPresentation/bin/Debug/net8.0/BlazorPythonModelsPresentation.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorPythonModelsPresentation/bin/Debug/net8.0/BlazorPythonModelsPresentation.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorPythonModelsPresentation/bin/Debug/net8.0/BlazorPythonModelsPresentation.staticwebassets.runtime.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorPythonModelsPresentation/bin/Debug/net8.0/BlazorPythonModelsPresentation.staticwebassets.runtime.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlazorPythonModelsPresentation/obj/Debug/net8.0/BlazorPythonModelsPresentation.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorPythonModelsPresentation/obj/Debug/net8.0/BlazorPythonModelsPresentation.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlazorPythonModelsPresentation/obj/Debug/net8.0/BlazorPythonModelsPresentation.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorPythonModelsPresentation/obj/Debug/net8.0/BlazorPythonModelsPresentation.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlazorPythonModelsPresentation/obj/Debug/net8.0/BlazorPythonModelsPresentation.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorPythonModelsPresentation/obj/Debug/net8.0/BlazorPythonModelsPresentation.dll" afterDir="false" />
@@ -29,11 +23,8 @@
       <change beforePath="$PROJECT_DIR$/BlazorPythonModelsPresentation/obj/Debug/net8.0/BlazorPythonModelsPresentation.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorPythonModelsPresentation/obj/Debug/net8.0/BlazorPythonModelsPresentation.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlazorPythonModelsPresentation/obj/Debug/net8.0/ref/BlazorPythonModelsPresentation.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorPythonModelsPresentation/obj/Debug/net8.0/ref/BlazorPythonModelsPresentation.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlazorPythonModelsPresentation/obj/Debug/net8.0/refint/BlazorPythonModelsPresentation.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorPythonModelsPresentation/obj/Debug/net8.0/refint/BlazorPythonModelsPresentation.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorPythonModelsPresentation/obj/Debug/net8.0/staticwebassets.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorPythonModelsPresentation/obj/Debug/net8.0/staticwebassets.build.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorPythonModelsPresentation/obj/Debug/net8.0/staticwebassets.development.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorPythonModelsPresentation/obj/Debug/net8.0/staticwebassets.development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorPythonModelsPresentation/obj/Debug/net8.0/staticwebassets.pack.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorPythonModelsPresentation/obj/Debug/net8.0/staticwebassets.pack.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorPythonModelsPresentation/obj/Debug/net8.0/staticwebassets/msbuild.BlazorPythonModelsPresentation.Microsoft.AspNetCore.StaticWebAssets.props" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorPythonModelsPresentation/obj/Debug/net8.0/staticwebassets/msbuild.BlazorPythonModelsPresentation.Microsoft.AspNetCore.StaticWebAssets.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorPythonModelsPresentation/wwwroot/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorPythonModelsPresentation/wwwroot/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WaterModels/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/WaterModels/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WaterModels/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/WaterModels/model.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +48,9 @@
     <setting file="file://$PROJECT_DIR$/BlazorPythonModelsPresentation/Components/Pages/Presentation.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/BlazorPythonModelsPresentation/Components/Pages/Presentation.razor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/BlazorPythonModelsPresentation/Components/Pages/PythonModels.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/calebstandfield/Documents/GitHub/2025HackathonWater/BlazorPythonModelsPresentation/Components/Pages/PythonModels.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/BlazorPythonModelsPresentation/Components/Pages/PythonModels.razor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/calebstandfield/Documents/GitHub/2025HackathonWater/BlazorPythonModelsPresentation/Components/Pages/PythonModels.razor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/BlazorPythonModelsPresentation/PythonApiService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/BlazorPythonModelsPresentation/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/BlazorPythonModelsPresentation/obj/Debug/net8.0/BlazorPythonModelsPresentation.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
@@ -147,7 +140,7 @@
       <workItem from="1738355221949" duration="160000" />
       <workItem from="1738355415205" duration="54000" />
       <workItem from="1738363163179" duration="5692000" />
-      <workItem from="1738400240365" duration="1417000" />
+      <workItem from="1738400240365" duration="2017000" />
     </task>
     <task id="LOCAL-00001" summary="files">
       <option name="closed" value="true" />

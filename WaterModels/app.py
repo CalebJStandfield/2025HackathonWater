@@ -1,6 +1,7 @@
-from flask import Flask, jsonify, request
+import pandas as pd
+from flask import Flask, request
 
-from WaterModels.model import get_risk
+import model
 
 app = Flask(__name__)
 
@@ -12,6 +13,9 @@ def dsci_state_risk():
     data = request.get_json()
 
     # Extract the input values from the request
+    print("Hello world")
+    print(data)
+
     year = data['year']
     month = data['month']
     rainfall = data['rainfall']
@@ -28,7 +32,7 @@ def dsci_state_risk():
     parely_soil = data['parelySoil']
     hayden_soil = data['haydenSoil']
 
-    pd.DataFrame({
+    x = pd.DataFrame({
         "Year" : year,
         "Month" : month,
         "Rainfall" : rainfall,
@@ -47,7 +51,7 @@ def dsci_state_risk():
     })
 
     # Process the data (for example, you could calculate a risk score)
-    risk_score =  get_risk(x: pd.DataFrame)
+    risk_score =  model.get_risk(x)
 
     # Return the result as a string
     return str(risk_score)
