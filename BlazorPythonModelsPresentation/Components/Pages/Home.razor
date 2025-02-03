@@ -11,110 +11,12 @@
     <div class="center">
     </div>
     <br/>
-    <h3>About this snake game</h3>
-    <p>
-        &emsp; This game is our rendition of the highly popular snake game. This time we are set in space where this is the last hospitable piece of land in the galaxy.
-        You, the snake are a test subject of an alien race that has long since forgotten about organic life and are running tests on how big a snake can become.
-        Even when you die you are brought back to life to eat in an endless loop forever...
-
-    </p>
 
     <div class="text-container">
         <img src="images/AquaAwareLogoBlack.png" alt="Logo" class="float-image">
         <p>
-            This is an example paragraph where the text wraps around the image.
-            You can add more content, and it will continue flowing beside the image
-            instead of below it. Adjust the size of the image to control how much
-            space it takes.
+            We aim to bridge this gap with a model that combines current, past and future predictions of precipitation along with the last 25 years of data on temperature, soil moisture, groundwater levels, the Great Salt Lake levels and past drought data to calculate risk and severity of droughts in Utah in the next 6 months.
+
         </p>
     </div>
-
-    <h3>Game play mechanics</h3>
-    <p>
-        &emsp; Just like the highly popular snake game our game runs in a similar fashion. Use the WASD keys to go up, left, down, and right.
-        When eating an apple you the snake will get slightly longer, and your score will increase by one point. <br/>
-        Be careful not to hit any walls, players, or yourself as that will result in a death. <br/>
-        When dying you will respond in a random location with a score of 0. <br/>
-        Each snake will be one of 14 different colors. (players with and ID of 15 >= will have their color wrap around and repeat)
-    </p>
-
-    <h3>Connecting to the server</h3>
-    <p>
-        &emsp; The connection process is quite simple, follow these steps: <br/>
-        1st, ensure you have the hosts name and port number. <br/>
-        2nd, make your name no more than 16 characters. <br/>
-        3rd, ensure the server you are trying to connect is running. <br/>
-        Once connected please note that the host's name, port, and your name cannot be changed. To change these you must disconnect from the server.
-        Once disconnected the input areas will be ready to be changed if needed.
-    </p>
-
-    <h3>Errors when connecting</h3>
-    <p>
-        &emsp; There are three errors that can occur when trying to connect: <br/>
-        1st, you are trying to connect to a sever that doesnt exist. <br/>
-        2nd, the server you are trying to connect is not open. <br/>
-        3rd, your name is too long. <br/>
-        If you try to connect to a server that isn't running or doesnt exist a popup will explain that user couldn't connect to the server and to try again. <br/>
-        If your user name is more than 16 characters a popup will tell you your name is too long and auto delete any characters that exceed the 16 character maximum.
-    </p>
-
-    <h3>GameLoop starting</h3>
-    <p>
-        &emsp; The game loop will start as soon as the canvas is rendered as well as if the player disconnects and reconnects. <br />
-        The program can handle both scenarios of first time rendering as well disconnect and reconnect rendering.
-    </p>
-
-    <h3>Special features</h3>
-    <p>
-        &emsp; There are 4 special features of this snake game. Each will be referenced here first then examined in more detail in their own sections.
-        The first being Dark mode: A modern day look to make the game easy on the eyes. <br />
-        The death animation: When dying watch your snake turn red and a funny bonk over your head. <br />
-        The apples: When eating an apple watch as it decays. <br />
-        The scoreboard: Look to the right of the screen and see a scoreboard of the game.
-    </p>
-
-    <h3>Dark mode</h3>
-    <p>
-        &emsp; To give the game a sense of style and fit into the space themed background (and my eyes hurt form being flash-banged when opening the game)
-        we implemented a dark mode to make the game standout. The popups are also dark mode and the little X to close the popup lights up red when hovering over it. <br/>
-        Note that this about page too is in dark mode, and also the scoreboard as well to save mine and your eyes a little.
-    </p>
-
-    <h3>Death of the snake and BONK</h3>
-    <p>
-        &emsp; When the user dies the snake will turn a dark red color (different than the red snake color) to indicate they have died. <br/>
-        Also a funny BONK image will be overlay on top of their head until they respond.
-    </p>
-
-    <h3>The apples (Powerups)</h3>
-    <p>
-        &emsp; The powerups have been turned into apples, each apple when eaten will be replaced with an image of an apple core. <br/>
-        These apple cores will then slowly decay (fade) into the background to then disappear forever.
-    </p>
-
-    <h3>The scoreboard</h3>
-    <p>
-        &emsp; The scoreboard takes up the right hand side of the screen. It will remain inactive until the player starts a game. <br/>
-        Once the player has started the game the scoreboard will update itself to the current state of the game. Adding in all the players and their scores to the board. <br/>
-        The scoreboard will automatically keep the players sorted from the highest score to the lowest score. <br/> <br/>
-
-        &emsp; Note: do to not having the server code it would be too much processing to keep track of players scores and then each time we receive their JSON to check the score
-        and see if it had changed and then finally update the board. So instead we have just implemented the scoreboard to update every 1000 milliseconds based on the current
-        state of all the players in the world.
-    </p>
 </div>
-
-<style>
-    body {
-        background-color: #121212;
-        color: #ffffff;
-    }
-    .text-format {
-        width: 950px;
-        word-wrap: break-word;
-        margin: 0 auto;
-    }
-    .center {
-        text-align: center;
-    }
-</style>

@@ -1,0 +1,18 @@
+@page "/infographic"
+
+<h3>Infographic</h3>
+
+<div id="slideshow-container" style="height: 85vh; width: 100%; display: flex; justify-content: center; align-items: center; margin: 0; padding: 0; overflow: hidden;">
+    <iframe id="slideFrame" style="width: 100%; height: 100%; max-width: 100%; max-height: 100%; border: none;" allowfullscreen src="@_slideUrl"></iframe>
+</div>
+
+@code {
+    /// <summary>
+    ///   <para>
+    ///     SlideUrl to show the current slide
+    ///     Home page is default value
+    ///   </para>
+    /// </summary>
+    private string _slideUrl = "https://docs.google.com/presentation/d/1duzRn_BUINDcJTqObUil_XJY50nKN0GUKH6yoKDGLXU/edit#slide=id.g32bb13f742a_0_5";
+
+}

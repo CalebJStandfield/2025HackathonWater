@@ -200,7 +200,7 @@ tr:nth-child(even) {
 }
 
 .text-container {
-    max-width: 600px; /* Adjust width */
+    width: 600px; /* Adjust width */
     line-height: 1.6;
 }
 
